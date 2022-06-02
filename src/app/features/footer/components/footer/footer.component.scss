@@ -1,0 +1,79 @@
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 44px 52px;
+    border-radius: 15px;
+    background-color: var(--black);
+    background-image: url('../../../..//../assets/images/sun.svg');
+    background-position: calc(100% - 175px) bottom;
+    background-repeat: no-repeat;
+}
+
+.footer__text
+{
+    line-height: 30.4px;
+    color: var(--white);
+}
+
+.footer__address
+{
+    color: var(--white);
+}
+
+.footer__text:not(:last-child)
+{
+    margin-bottom: 35px;
+}
+
+.footer__column,
+.footer__phones,
+.footer__emails
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer__column--first
+{
+    width: 320px;
+}
+
+.footer__column--middle
+{
+    width: 360px;
+}
+
+.footer__address
+{
+    margin-bottom: 14px;
+}
+
+.footer__phones
+{
+    margin-bottom: 15px;
+}
+
+.footer__phones,
+.footer__emails
+{
+    line-height: 24px;
+}
+
+.footer__social-link:not(:last-child)
+{
+    margin-bottom: 20px;
+}
+
+.footer__phone:not(:last-child),
+.footer__email:not(:last-child)
+{
+    margin-bottom: 5px;
+}
+
+.footer__link
+{
+    align-self: flex-start;
+}

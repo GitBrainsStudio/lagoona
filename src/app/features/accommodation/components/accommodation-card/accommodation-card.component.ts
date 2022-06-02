@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-accommodation-card',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accommodation-card.component.scss']
 })
 export class AccommodationCardComponent implements OnInit {
+
+  @Input() isLast:boolean = false;
 
   constructor() { }
 

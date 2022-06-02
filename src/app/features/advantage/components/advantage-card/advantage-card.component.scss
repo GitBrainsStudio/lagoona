@@ -1,0 +1,21 @@
+.advantage-card
+{
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 116px 42px 41px 42px;
+    width: 275px;
+    box-sizing: border-box;
+}
+
+.advantage-card__text
+{
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.advantage-card--first
+{
+    background-image: url('../../../../../assets/images/ads-1.svg');
+    background-repeat: no-repeat;
+    background-position: 45px 45px;
+}

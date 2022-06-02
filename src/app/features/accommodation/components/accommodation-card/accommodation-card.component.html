@@ -1,1 +1,34 @@
-<p>accommodation-card works!</p>
+<article class="accommodation-card accommodation-card--first" *ngIf="!isLast; else last;">
+    <div class="accommodation-card__row">
+        <div class="accommodation-card__price">
+            <span class="accommodation-card__price-from">от</span> 
+            6320р 
+            <span class="accommodation-card__price-for">/ ночь</span>
+        </div>
+        <div class="accommodation-card__rating">
+           <mat-icon svgIcon="star-1" class="accommodation-card__star-icon"></mat-icon>
+           <mat-icon svgIcon="star-1" class="accommodation-card__star-icon"></mat-icon>
+           <mat-icon svgIcon="star-1" class="accommodation-card__star-icon"></mat-icon>
+           <mat-icon svgIcon="star-1" class="accommodation-card__star-icon"></mat-icon>
+           <mat-icon svgIcon="star-2" class="accommodation-card__star-icon"></mat-icon>
+        </div>
+    </div>
+    <h3 class="accommodation-card__title">
+        Lagoona española
+    </h3>
+    <p class="accommodation-card__description">
+        Барселона, Испания
+    </p>
+    <button class="accommodation-card__button button">
+        Номера
+    </button>
+</article>
+
+<ng-template #last>
+    <article class="accommodation-card accommodation-card--last">
+        <a href="#" class="accommodation-card__all-variants arrow-link arrow-link--white">
+            <span class="arrow-link__text">Посмотреть все варианты</span>
+            <mat-icon svgIcon="arrow-right" class="arrow-link__icon"></mat-icon>
+        </a>
+    </article>
+</ng-template>

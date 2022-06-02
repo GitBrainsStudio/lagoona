@@ -1,0 +1,59 @@
+.contacts-card__contact-row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.contacts-card__contact-row:not(:last-child)
+{
+    border-bottom: 1px var(--gray-light) solid;
+}
+
+.contacts-card__phones,
+.contacts-card__email
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacts-card__contacts-column
+{
+    flex-grow: 1;
+}
+
+.contacts-card
+{
+    display: flex;
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 44px;
+}
+
+.contacts-card__contacts-column
+{
+    margin-right: 50px;
+}
+
+.contacrs-card__title
+{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contacts-card__text,
+.contacts-card__phones,
+.contacts-card__emails
+{
+    width: 230px;
+    line-height: 24px;
+}
+
+.contacts-card__email,
+.contacts-card__email-description,
+.contacts-card__phone:not(:last-child)
+{
+    margin-bottom: 5px;
+}

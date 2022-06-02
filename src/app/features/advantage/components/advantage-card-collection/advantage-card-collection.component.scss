@@ -1,0 +1,14 @@
+.advantage-card-collection
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+.advantage-card-collection__item
+{
+    display: inline-block;
+}

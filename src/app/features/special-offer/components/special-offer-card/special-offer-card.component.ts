@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-special-offer-card',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpecialOfferCardComponent implements OnInit {
 
+  @Input() size:"default" | "large" = "default";
+
+  get isLarge()
+  {
+    return this.size == "large";
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

@@ -1,0 +1,192 @@
+.text-link
+{
+    text-decoration: none;
+    color: var(--gray);
+    transition: color .2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.text-link:hover
+{
+    cursor: pointer;
+    color: var(--gold);
+}
+
+.text-link:focus-visible
+{
+    color: var(--gold);
+    outline: 1px var(--gold) solid;
+    outline-offset: 4px;
+}
+
+.text-link:active
+{
+    color: var(--gold-dark);
+}
+
+.text-link--primary
+{
+    color: var(--gold);
+}
+
+.text-link--primary:hover
+{
+    color: var(--gold-light);
+}
+
+.text-link--primary:active
+{
+    color: var(--gold-dark);
+}
+
+.arrow-link
+{
+    text-decoration: none;
+    color: var(--yellow);
+    transition: color .2s ease;
+
+    display: flex;
+    align-items: center;
+}
+
+.arrow-link__icon
+{
+    display: inline-flex !important;
+    align-items: center;
+    transition: .2s;
+}
+
+.arrow-link__icon svg
+{
+    height: 15px;
+}
+
+.arrow-link__icon svg path
+{
+    stroke: var(--yellow);
+    transition: stroke .2s ease;
+}
+
+.arrow-link__text
+{
+    margin-top: 2px;
+}
+
+.arrow-link:hover
+{
+    cursor: pointer;
+    color: var(--gold-light);
+}
+
+.arrow-link:hover .arrow-link__icon
+{
+    margin-left: 5px;
+}
+
+.arrow-link:hover svg path
+{
+    stroke: var(--gold-light);
+}
+
+.arrow-link:active
+{
+    color: var(--gold-dark);
+}
+
+.arrow-link:active svg path
+{
+    stroke: var(--gold-dark);
+}
+
+.arrow-link:focus-visible
+{
+    color: var(--gold);
+    outline: 1px var(--gold) solid;
+    outline-offset: 4px;
+}
+
+.arrow-link:focus-visible svg path
+{
+    stroke: var(--gold);
+}
+
+.arrow-link--service .arrow-link__icon svg
+{
+    height: 18px;
+}
+
+.arrow-link--white
+{
+    color: var(--white);
+}
+
+.arrow-link--white .arrow-link__icon svg path
+{
+    stroke: var(--white);
+}
+
+.arrow-link--white:hover .arrow-link__icon svg path
+{
+    stroke: var(--gold-light);
+}
+
+.arrow-link--white:active .arrow-link__icon svg path
+{
+    stroke: var(--gold-dark);
+}
+
+.arrow-link--white:focus-visible .arrow-link__icon svg path
+{
+    stroke: var(--gold);
+}
+
+.icon-link .icon-link__svg svg g path,
+.icon-link .icon-link__svg svg path
+{
+    transition: fill .2s ease;
+}
+
+.icon-link:focus-visible .icon-link__svg svg g path
+{
+    fill: var(--gold);
+}
+
+.icon-link:focus-visible .icon-link__svg svg path
+{
+    fill: var(--gold);
+}
+
+.icon-link:hover .icon-link__svg svg g path
+{
+    fill: var(--gold-light);
+}
+
+.icon-link:hover .icon-link__svg svg path
+{
+    fill: var(--gold-light);
+}
+
+.icon-link:active .icon-link__svg svg g path
+{
+    fill: var(--gold-dark);
+}
+
+.icon-link:active .icon-link__svg svg path
+{
+    fill: var(--gold-dark);
+}
+
+.icon-link
+{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.icon-link:focus-visible
+{
+    color: var(--gold);
+    outline: 1px var(--gold) solid;
+    outline-offset: 4px;
+}
