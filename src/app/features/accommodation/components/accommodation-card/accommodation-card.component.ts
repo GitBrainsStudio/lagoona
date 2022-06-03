@@ -18,7 +18,7 @@ export class AccommodationCardComponent implements OnInit {
 
   get backgroundImage() : string 
   {
-    return `url('assets/images/${this.image}')`
+    return this.isLast ? `linear-gradient(360deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('assets/images/hotel-9.jpg')` : `url('assets/images/${this.image}')`
   }
 
   constructor() { }

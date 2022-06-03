@@ -21,7 +21,7 @@
 </article>
 
 <ng-template #last>
-    <article class="accommodation-card accommodation-card--last">
+    <article class="accommodation-card accommodation-card--last" [ngStyle]="{'background-image' : backgroundImage }">
         <a href="#" class="accommodation-card__all-variants arrow-link arrow-link--white">
             <span class="arrow-link__text">Посмотреть все варианты</span>
             <mat-icon svgIcon="arrow-right" class="arrow-link__icon"></mat-icon>
