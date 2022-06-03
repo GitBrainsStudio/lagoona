@@ -9,7 +9,7 @@ import { IconService } from './features/icon/service/icon.service';
 export class AppComponent implements OnInit {
   title = 'lagoona';
 
-  constructor(private iconService: IconService) { }
+  constructor(private iconService: IconService) {}
 
   ngOnInit(): void {
     this.iconService.init();

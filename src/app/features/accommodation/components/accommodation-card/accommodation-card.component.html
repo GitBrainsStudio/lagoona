@@ -1,30 +1,42 @@
-<article class="accommodation-card" *ngIf="!isLast; else last;" [ngStyle]="{'background-image' : backgroundImage }">
-    <div class="accommodation-card__row">
-        <div class="accommodation-card__price">
-            <span class="accommodation-card__price-from">от</span> 
-            {{ price }}р 
-            <span class="accommodation-card__price-for">/ ночь</span>
-        </div>
-        <div class="accommodation-card__rating">        
-           <mat-icon [svgIcon]="ratingStar.icon" class="accommodation-card__star-icon" *ngFor="let ratingStar of ratingStars"></mat-icon>
-        </div>
+<article
+  class="accommodation-card"
+  *ngIf="!isLast; else last"
+  [ngStyle]="{ 'background-image': backgroundImage }"
+>
+  <div class="accommodation-card__row">
+    <div class="accommodation-card__price">
+      <span class="accommodation-card__price-from">от</span>
+      {{ price }}р
+      <span class="accommodation-card__price-for">/ ночь</span>
     </div>
-    <h3 class="accommodation-card__title">
-        {{ title }}
-    </h3>
-    <p class="accommodation-card__description">
-        {{ description }}
-    </p>
-    <button class="accommodation-card__button button">
-        Номера
-    </button>
+    <div class="accommodation-card__rating">
+      <mat-icon
+        [svgIcon]="ratingStar.icon"
+        class="accommodation-card__star-icon"
+        *ngFor="let ratingStar of ratingStars"
+      ></mat-icon>
+    </div>
+  </div>
+  <h3 class="accommodation-card__title">
+    {{ title }}
+  </h3>
+  <p class="accommodation-card__description">
+    {{ description }}
+  </p>
+  <button class="accommodation-card__button button">Номера</button>
 </article>
 
 <ng-template #last>
-    <article class="accommodation-card accommodation-card--last" [ngStyle]="{'background-image' : backgroundImage }">
-        <a href="#" class="accommodation-card__all-variants arrow-link arrow-link--white">
-            <span class="arrow-link__text">Посмотреть все варианты</span>
-            <mat-icon svgIcon="arrow-right" class="arrow-link__icon"></mat-icon>
-        </a>
-    </article>
+  <article
+    class="accommodation-card accommodation-card--last"
+    [ngStyle]="{ 'background-image': backgroundImage }"
+  >
+    <a
+      href="#"
+      class="accommodation-card__all-variants arrow-link arrow-link--white"
+    >
+      <span class="arrow-link__text">Посмотреть все варианты</span>
+      <mat-icon svgIcon="arrow-right" class="arrow-link__icon"></mat-icon>
+    </a>
+  </article>
 </ng-template>

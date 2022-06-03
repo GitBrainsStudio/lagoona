@@ -6,9 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./tour-form.component.scss']
 })
 export class TourFormComponent {
-
-  get selectBackgroundImage() : string
-  {
-    return `url('assets/images/rectangle-bottom.svg')`
+  get selectBackgroundImage(): string {
+    return `url('assets/images/rectangle-bottom.svg')`;
   }
 }

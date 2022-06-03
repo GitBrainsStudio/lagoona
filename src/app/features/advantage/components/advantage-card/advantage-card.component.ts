@@ -6,12 +6,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./advantage-card.component.scss']
 })
 export class AdvantageCardComponent {
+  @Input() image: string = 'adv-1.svg';
+  @Input() text: string =
+    'Идейные соображения высшего порядка, а также постоянный количественный рост';
 
-  @Input() image:string = 'adv-1.svg';
-  @Input() text:string = 'Идейные соображения высшего порядка, а также постоянный количественный рост';
-
-  get backgroundImage() : string 
-  {
-    return `url('assets/images/${this.image}')`
+  get backgroundImage(): string {
+    return `url('assets/images/${this.image}')`;
   }
 }

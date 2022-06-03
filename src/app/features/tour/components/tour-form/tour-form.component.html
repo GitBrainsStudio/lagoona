@@ -1,31 +1,37 @@
 <form class="tour-form">
-    <div class="tour-form__field">
-        <span class="tour-form__field-title">Город вылета</span>
-        <select class="tour-form__field-select" [ngStyle]="{'background-image' : selectBackgroundImage }">
-            <option>Екатеринбург</option>
-            <option>Екатеринбург</option>
-            <option>Екатеринбург</option>
-            <option>Екатеринбург</option>
-            <option>Екатеринбург</option>
-        </select>
-    </div>
-    <div class="tour-form__field">
-        <span class="tour-form__field-title">Страна</span>
-        <select class="tour-form__field-select" [ngStyle]="{'background-image' : selectBackgroundImage }">
-            <option>Екатеринбург</option>
-        </select>
-    </div>
-    <div class="tour-form__field ">
-        <span class="tour-form__field-title">Дата прибытия</span>
-        <input type="date" class="tour-form__input-date">
-    </div>
-    <div class="tour-form__field tour-form__field--little">
-        <span class="tour-form__field-title">Ночей</span>
-        <input type="text" class="tour-form__input-text">
-    </div>
-    <div class="tour-form__field tour-form__field--little">
-        <span class="tour-form__field-title">Туристы</span>
-        <input type="text" class="tour-form__input-text">
-    </div>
-    <button class="button tour-form__button">Найти</button>
+  <div class="tour-form__field">
+    <span class="tour-form__field-title">Город вылета</span>
+    <select
+      class="tour-form__field-select"
+      [ngStyle]="{ 'background-image': selectBackgroundImage }"
+    >
+      <option>Екатеринбург</option>
+      <option>Екатеринбург</option>
+      <option>Екатеринбург</option>
+      <option>Екатеринбург</option>
+      <option>Екатеринбург</option>
+    </select>
+  </div>
+  <div class="tour-form__field">
+    <span class="tour-form__field-title">Страна</span>
+    <select
+      class="tour-form__field-select"
+      [ngStyle]="{ 'background-image': selectBackgroundImage }"
+    >
+      <option>Екатеринбург</option>
+    </select>
+  </div>
+  <div class="tour-form__field">
+    <span class="tour-form__field-title">Дата прибытия</span>
+    <input type="date" class="tour-form__input-date" />
+  </div>
+  <div class="tour-form__field tour-form__field--little">
+    <span class="tour-form__field-title">Ночей</span>
+    <input type="text" class="tour-form__input-text" />
+  </div>
+  <div class="tour-form__field tour-form__field--little">
+    <span class="tour-form__field-title">Туристы</span>
+    <input type="text" class="tour-form__input-text" />
+  </div>
+  <button class="button tour-form__button">Найти</button>
 </form>

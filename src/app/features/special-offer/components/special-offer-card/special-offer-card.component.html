@@ -1,15 +1,14 @@
-<article 
-class="special-offer-card" 
-[ngClass]="{'special-offer-card--large' : isLarge }" 
-[ngStyle]="{'background-image' : backgroundImage }">
-    <h3 class="special-offer-card__title">
-        {{ title }}
-    </h3>
-    <span class="special-offer-card__price">
-        от {{ price }} р
-    </span>
-    <a href="#" class="special-offer-card__link arrow-link">
-        <span class="arrow-link__text">Подробнее</span>
-        <mat-icon svgIcon="arrow-right" class="arrow-link__icon"></mat-icon>
-    </a>
+<article
+  class="special-offer-card"
+  [ngClass]="{ 'special-offer-card--large': isLarge }"
+  [ngStyle]="{ 'background-image': backgroundImage }"
+>
+  <h3 class="special-offer-card__title">
+    {{ title }}
+  </h3>
+  <span class="special-offer-card__price"> от {{ price }} р </span>
+  <a href="#" class="special-offer-card__link arrow-link">
+    <span class="arrow-link__text">Подробнее</span>
+    <mat-icon svgIcon="arrow-right" class="arrow-link__icon"></mat-icon>
+  </a>
 </article>
