@@ -1,23 +1,19 @@
-<article class="accommodation-card accommodation-card--first" *ngIf="!isLast; else last;">
+<article class="accommodation-card" *ngIf="!isLast; else last;" [ngStyle]="{'background-image' : backgroundImage }">
     <div class="accommodation-card__row">
         <div class="accommodation-card__price">
             <span class="accommodation-card__price-from">от</span> 
-            6320р 
+            {{ price }}р 
             <span class="accommodation-card__price-for">/ ночь</span>
         </div>
-        <div class="accommodation-card__rating">
-           <mat-icon svgIcon="star-1" class="accommodation-card__star-icon"></mat-icon>
-           <mat-icon svgIcon="star-1" class="accommodation-card__star-icon"></mat-icon>
-           <mat-icon svgIcon="star-1" class="accommodation-card__star-icon"></mat-icon>
-           <mat-icon svgIcon="star-1" class="accommodation-card__star-icon"></mat-icon>
-           <mat-icon svgIcon="star-2" class="accommodation-card__star-icon"></mat-icon>
+        <div class="accommodation-card__rating">        
+           <mat-icon [svgIcon]="ratingStar.icon" class="accommodation-card__star-icon" *ngFor="let ratingStar of ratingStars"></mat-icon>
         </div>
     </div>
     <h3 class="accommodation-card__title">
-        Lagoona española
+        {{ title }}
     </h3>
     <p class="accommodation-card__description">
-        Барселона, Испания
+        {{ description }}
     </p>
     <button class="accommodation-card__button button">
         Номера

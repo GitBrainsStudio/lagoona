@@ -5,11 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './advantage-card-collection.component.html',
   styleUrls: ['./advantage-card-collection.component.scss']
 })
-export class AdvantageCardCollectionComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class AdvantageCardCollectionComponent { }

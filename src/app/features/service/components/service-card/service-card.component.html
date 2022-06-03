@@ -1,6 +1,9 @@
-<article class="service-card service-card--first">
-    <a href="#" class="service-card__link arrow-link arrow-link--service">Эксклюзивное обслуживание <mat-icon svgIcon="arrow-right" class="arrow-link__icon"></mat-icon></a>
+<article class="service-card" [ngStyle]="{'background-image' : backgroundImage }">
+    <a href="#" class="service-card__link arrow-link arrow-link--service">
+        <span class="arrow-link__text">{{ title }}</span>
+        <mat-icon svgIcon="arrow-right" class="arrow-link__icon"></mat-icon>
+    </a>
     <p class="service-card__text">
-        Равным образом постоянный количественный рост и сфера нашей активности
+        {{ text }}
     </p>
 </article>

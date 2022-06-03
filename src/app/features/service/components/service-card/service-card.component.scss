@@ -2,17 +2,19 @@
 {
     width: 573px;
     background-color: var(--white);
-    padding: 45px;
+    padding: 40px 45px;
     border-radius: 15px;
     box-sizing: border-box;
     padding-top: 200px;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 .service-card__link
 {
     font-size: 20px;
     outline: none;
+    margin-bottom: 10px;
 }
 
 .service-card__text
@@ -20,10 +22,14 @@
     line-height: 32px;
 }
 
-.service-card--first
+.service-card__link::after 
 {
-    background-image: url('../../../../../assets/images/services-1.jpg');
-    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .service-card__link:focus-visible::before

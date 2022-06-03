@@ -7,6 +7,7 @@
     padding-top: 257px;
     box-sizing: border-box;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 .accommodation-card__row
@@ -20,6 +21,7 @@
 .accommodation-card__title
 {
     margin-bottom: 16px;
+    font-weight: 400;
 }
 
 .accommodation-card__description
@@ -28,15 +30,9 @@
     color: var(--gray-medium);
 }
 
-.accommodation-card--first
-{
-    background-image: url('../../../../../assets/images/hotel-1.jpg');
-    background-repeat: no-repeat;
-}
-
 .accommodation-card--last
 {
-    background-image: linear-gradient(90deg, rgba(163, 163, 162, 0.452) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../../../../../assets/images/hotel-9.jpg');
+    background-image: linear-gradient(360deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../../../../../assets/images/hotel-9.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;

@@ -1,9 +1,12 @@
-<article class="special-offer-card" [ngClass]="{'special-offer-card--large' : isLarge }">
+<article 
+class="special-offer-card" 
+[ngClass]="{'special-offer-card--large' : isLarge }" 
+[ngStyle]="{'background-image' : backgroundImage }">
     <h3 class="special-offer-card__title">
-        Мальдивские острова
+        {{ title }}
     </h3>
     <span class="special-offer-card__price">
-        от 55 000 р
+        от {{ price }} р
     </span>
     <a href="#" class="special-offer-card__link arrow-link">
         <span class="arrow-link__text">Подробнее</span>
