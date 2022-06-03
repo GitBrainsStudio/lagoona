@@ -19,6 +19,6 @@ export class SpecialOfferCardComponent {
 
   get backgroundImage() : string 
   {
-    return !this.isLarge ? `linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('/assets/images/${this.image}')` : `url('/assets/images/${this.image}')`
+    return !this.isLarge ? `linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('assets/images/${this.image}')` : `url('assets/images/${this.image}')`
   }
 }

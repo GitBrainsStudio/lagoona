@@ -13,6 +13,6 @@ export class ServiceCardComponent {
 
   get backgroundImage() : string 
   {
-    return `url('/assets/images/${this.image}')`
+    return `url('assets/images/${this.image}')`
   }
 }
