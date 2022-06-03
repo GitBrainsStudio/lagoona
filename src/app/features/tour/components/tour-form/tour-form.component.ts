@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
 })
 export class TourFormComponent {
 
-  get backgroundImage() : string
+  get selectBackgroundImage() : string
   {
-    return `background-image: url('assets/images/rectangle-bottom.svg');`
+    return `url('assets/images/rectangle-bottom.svg')`
   }
-  
 }
